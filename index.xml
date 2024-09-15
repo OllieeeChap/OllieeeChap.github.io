@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>o//ie</title>
+    <link>https://olchap.fr/</link>
+    <description>Recent content on o//ie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copy, _right?_ - 2024 o//ie</copyright>
+    <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://olchap.fr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resume</title>
+      <link>https://olchap.fr/resume/</link>
+      <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://olchap.fr/resume/</guid>
+      <description> Experience Company Link Role Dates Location LAAS-CNRS Embedded systems PhD 2024 - Present Toulouse, France Expleo Embedded systems engineer 2023 - 2024 Toulouse, France CEA CESTA Embedded systems internship 2019 - 2022 Le Barp, France Electronic internship 2019 Education School Link Degree Date ENSEIRB-MatMeca Embedded systems master&#39;s degree 2019 - 2022 IUT Nantes University degree in electronic and informatic 2017 - 2019 Showa Senior High School Intercultural Program in Japan with AFS 2016 - 2017 Volunteering Association Link Roles Date Clar-T Communication and health support 2024 - Present AFS Supervision and support for future AFSers 2015 - 2020 </description>
+      
+    </item>
+    
+    <item>
+      <title>Zoomies</title>
+      <link>https://olchap.fr/projects/zoomies/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://olchap.fr/projects/zoomies/</guid>
+      <description>GMTK GameJam 2024</description>
+      
+    </item>
+    
+  </channel>
+</rss>
