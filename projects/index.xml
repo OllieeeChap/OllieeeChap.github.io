@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on o//ie</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>https://olchap.fr/projects/</link>
     <description>Recent content in Projects on o//ie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copy, _right?_ - 2025 o//ie</copyright>
-    <lastBuildDate>Mon, 13 Jun 2022 20:55:37 +0100</lastBuildDate><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Jun 2022 20:55:37 +0100</lastBuildDate><atom:link href="https://olchap.fr/projects/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Zoomies</title>
-      <link>http://localhost:1313/projects/zoomies/</link>
+      <link>https://olchap.fr/projects/zoomies/</link>
       <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/zoomies/</guid>
+      <guid>https://olchap.fr/projects/zoomies/</guid>
       <description>The funniest game you could play for GMTK 24&#39;</description>
       
     </item>
