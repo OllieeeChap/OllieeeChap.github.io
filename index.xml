@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>o//ie</title>
+    <link>https://olchap.fr/</link>
+    <description>Recent content on o//ie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copy, _right?_ - 2025 o//ie</copyright>
+    <lastBuildDate>Thu, 09 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://olchap.fr/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>LogiWifi</title>
+      <link>https://olchap.fr/projects/z906/</link>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://olchap.fr/projects/z906/</guid>
+      <description>Refurbished a dumb home-cinema setup and make it smart</description>
+      
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>https://olchap.fr/resume/</link>
+      <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://olchap.fr/resume/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Zoomies</title>
+      <link>https://olchap.fr/projects/zoomies/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://olchap.fr/projects/zoomies/</guid>
+      <description>The funniest game you could play for GMTK 24&#39;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
