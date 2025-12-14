@@ -1305,7 +1305,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "1205"
+    "wordCount": "1184"
   }]
   </script>
 
@@ -1781,7 +1781,7 @@
     </span>
     
 </h2>
-<p>This is a great starting point ! I know this -Logitech Z906- audio system is considered as garbage by the hifi community, but I&rsquo;ve been using it since 2013 <em>(time pass)</em> and I&rsquo;m quite happy with. I know, there&rsquo;s no HDMI-ARC I/O, no CEC, and it breaks easily. I mean, look at this power supply ?</p>
+<p>This is a great starting point! I know this -Logitech Z906- audio system is considered as garbage by the hifi community, but I&rsquo;ve been using it since 2013 <em>(time pass)</em> and I&rsquo;m quite happy with. I know, there&rsquo;s no HDMI-ARC I/O, no CEC, and it breaks easily. I mean, look at this power supply?</p>
 <figure><img
     class="my-0 rounded-md"
     loading="lazy"
@@ -1809,7 +1809,7 @@
     </span>
     
 </h2>
-<p>Ok, so the first thing to do is simply use Airplay, right ? But how ?</p>
+<p>Ok, so the first thing to do is simply use Airplay, right? But how?</p>
 <p>That&rsquo;s where I love the open-source community 🤍</p>
 
 <h3 class="relative group">First test
@@ -1824,7 +1824,7 @@
 <p>I have a bunch of Raspberry Pi sitting on my desk, and I did not know what to do with them since most of my home services are on my homelab. So I grabbed the less power hungry -and less powerful- RasPi I had (4B), looked on GitHub for Airplay projects, and found <a
   href="https://github.com/mikebrady/shairport-sync"
     target="_blank"
-  ><u>this</u></a>. Quickly runned a test, connect it on 3.5 mm input and <em>voilà</em> !</p>
+  ><u>this</u></a>. Quickly runned a test, connect it on 3.5 mm input and <em>voilà</em>!</p>
 <figure style="width: 50%;margin:auto"><img
     class="my-0 rounded-md"
     loading="lazy"
@@ -1837,7 +1837,7 @@
     srcset="/projects/z906/airplay_iphone_hu_3684c1a2a5b2f1c4.jpeg 800w, /projects/z906/airplay_iphone.jpeg 1280w"
     sizes="(min-width: 768px) 50vw, 65vw"
     data-zoom-src="/projects/z906/airplay_iphone.jpeg"></figure>
-<p>Unfortunately, RasPi&rsquo;s built-in audio jack output sounds quite awful. To make things better, just add an external DAC such as the PiFi DAC+ v2.0 :</p>
+<p>Unfortunately, RasPi&rsquo;s built-in audio jack output sounds quite awful. To make things better, just add an external DAC such as the PiFi DAC+ v2.0:</p>
 <figure style="width: 50%;margin:auto"><img
     class="my-0 rounded-md"
     loading="lazy"
@@ -1860,7 +1860,7 @@
     </span>
     
 </h3>
-<p>Raspbian (RaspberryPi Linux based distro) uses <em>alsa</em> as audio driver. Using an external DAC requires some configuration to use it as the default output. First, connect via SSH and check if your DAC is correctly detected :</p>
+<p>Raspbian (RaspberryPi Linux based distro) uses <em>alsa</em> as audio driver. Using an external DAC requires some configuration to use it as the default output. First, connect via SSH and check if your DAC is correctly detected:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> cat /proc/asound/cards
 </span></span><span class="line"><span class="cl"><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="go"> 0 [Headphones     ]: bcm2835_headpho - bcm2835 Headphones
@@ -1869,7 +1869,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="go">                      snd_rpi_hifiberry_dacplus
 </span></span></span><span class="line"><span class="cl"><span class="go"> 2 [vc4hdmi        ]: vc4-hdmi - vc4-hdmi
 </span></span></span><span class="line"><span class="cl"><span class="go">                      vc4-hdmi
-</span></span></span></code></pre></div><p>As you can see, there&rsquo;s three audio outputs : built-in jack, DAC and HDMI. To use output n°1 (DAC) as default, do :</p>
+</span></span></span></code></pre></div><p>As you can see, there&rsquo;s three audio outputs: built-in jack, DAC and HDMI. To use output n°1 (DAC) as default, do:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">#</span> touch /etc/asound.conf
 </span></span><span class="line"><span class="cl"><span class="gp">#</span> nano /etc/asound.conf
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -1886,7 +1886,7 @@
     </span>
     
 </h2>
-<p>So far, so good, you’ve added AirPlay connectivity to your speakers really easily. But who wants to get out of the couch, turn on the audio system, change input and set volume ? I certainly would not.</p>
+<p>So far, so good, you’ve added AirPlay connectivity to your speakers really easily. But who wants to get out of the couch, turn on the audio system, change input and set volume? I certainly would not.</p>
 <p>Furthermore, I lost my Z906&rsquo;s remote, so I need to use my Shield TV remote to turn on/off the system, but it also turn on the TV. The solution would be to control everything through Home Assistant. This will allow us to create automation with Airplay.</p>
 
 <h3 class="relative group">Configure Shairport-Sync
@@ -1901,7 +1901,7 @@
 <p>If you followed <a
   href="https://github.com/mikebrady/shairport-sync/blob/master/BUILD.md"
     target="_blank"
-  ><u>this guide</u></a> to install shairport-sync on your Pi, at the <em>Build and install</em> step, change the configuration flags to add MQTT functionnalities :</p>
+  ><u>this guide</u></a> to install shairport-sync on your Pi, at the <em>Build and install</em> step, change the configuration flags to add MQTT functionnalities:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> git clone https://github.com/mikebrady/shairport-sync.git
 </span></span><span class="line"><span class="cl"><span class="gp">$</span> <span class="nb">cd</span> shairport-sync
 </span></span><span class="line"><span class="cl"><span class="gp">$</span> autoreconf -fi
@@ -1920,7 +1920,7 @@
     </span>
     
 </h3>
-<p>The Logitech Z906 works as follow : the <em>main system</em> is located inside the subwoofer, and control commands are done via the console. In order to catch and emulate commands, we need to be between the console and the sub. Thanks to <a
+<p>The Logitech Z906 works as follow: the <em>main system</em> is located inside the subwoofer, and control commands are done via the console. In order to catch and emulate commands, we need to be between the console and the sub. Thanks to <a
   href="https://github.com/nomis/logitech-z906/blob/main/interface.rst"
     target="_blank"
   ><u>nomis&rsquo;s work</u></a> and <a
@@ -1930,7 +1930,7 @@
 <p><a
   href="https://github.com/Jupsi/logi_z906_wifi"
     target="_blank"
-  ><u>This project</u></a> does exactly what I wanted : intercept commands and send them via MQTT.</p>
+  ><u>This project</u></a> does exactly what I wanted: intercept commands and send them via MQTT.</p>
 <figure style="width: 70%;margin:auto"><img
     class="my-0 rounded-md"
     loading="lazy"
@@ -1954,8 +1954,8 @@
     </span>
     
 </h4>
-<p>First thing to do is modify Jupsi&rsquo;s code to add <em>power functions</em>. I&rsquo;ll not cover every modifications, but there&rsquo;s two important things to cover : <strong>autodiscovery</strong> and <strong>power handler</strong>. Using serial commands to control power is not possible, we&rsquo;ll need to simulate a press on the power button located in front of the console.</p>
-<p>To display a power button on Home Assistant, we need to tell our MQTT Broker that there&rsquo;s such functionnality by adding this function to <code>z906_autodiscover.cpp</code> :</p>
+<p>First thing to do is modify Jupsi&rsquo;s code to add <em>power functions</em>. I&rsquo;ll not cover every modifications, but there&rsquo;s two important things to cover: <strong>autodiscovery</strong> and <strong>power handler</strong>. Using serial commands to control power is not possible, we&rsquo;ll need to simulate a press on the power button located in front of the console.</p>
+<p>To display a power button on Home Assistant, we need to tell our MQTT Broker that there&rsquo;s such functionnality by adding this function to <code>z906_autodiscover.cpp</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="n">Z906</span><span class="o">::</span><span class="n">_AutoDiscovery_Power_Button</span><span class="p">(</span><span class="n">MQTT</span> <span class="o">*</span><span class="n">mqttClient</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="n">StaticJsonDocument</span><span class="o">&lt;</span><span class="mi">512</span><span class="o">&gt;</span> <span class="n">doc</span> <span class="o">=</span> <span class="n">Z906</span><span class="o">::</span><span class="n">_Helper_BuildBaseAutoDisocvery</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">    <span class="s">&#34;Power Button&#34;</span><span class="p">,</span>
@@ -1967,7 +1967,7 @@
 </span></span><span class="line"><span class="cl">  <span class="n">mqttClient</span><span class="o">-&gt;</span><span class="n">Publish</span><span class="p">(</span><span class="s">&#34;homeassistant/button/power_button/config&#34;</span><span class="p">,</span> <span class="n">payload</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="nb">true</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>This will return the power state and control.</p>
-<p>Next, we need to handle MQTT message to control GPIO on our ESP32. To do this, I modified <code>z906_onmqttmessage.cpp</code> :</p>
+<p>Next, we need to handle MQTT message to control GPIO on our ESP32. To do this, I modified <code>z906_onmqttmessage.cpp</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="n">Z906</span><span class="o">::</span><span class="n">_OnMQTTMessage_SetPower_Button</span><span class="p">(</span><span class="n">MQTT</span><span class="o">*</span> <span class="n">mqttClient</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">message</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">//Power Button Broker Message Handle
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;Power Button Pressed&#34;</span><span class="p">);</span>
@@ -1977,7 +1977,7 @@
 </span></span><span class="line"><span class="cl">  <span class="n">delay</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">POWER_PIN</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>This will simply close our circuit between <em>POWER_PIN</em> and <em>GND</em>, simulating a pressed button. Unfortunately, we cannot directly solder our ESP32 to the power button. The proper way to do this is by using an optocoupler (a basic PC817 for example) to completely isolate both systems, as current going through the power pin and ground could damage the console :</p>
+</span></span></code></pre></div><p>This will simply close our circuit between <em>POWER_PIN</em> and <em>GND</em>, simulating a pressed button. Unfortunately, we cannot directly solder our ESP32 to the power button. The proper way to do this is by using an optocoupler (a basic PC817 for example) to completely isolate both systems, as current going through the power pin and ground could damage the console:</p>
 <figure style="width: 80%;margin:auto"><img
     class="my-0 rounded-md"
     loading="lazy"
@@ -1990,7 +1990,7 @@
     srcset="/projects/z906/optocoupler_hu_afbaa7121b8cba86.png 800w, /projects/z906/optocoupler.png 1280w"
     sizes="(min-width: 768px) 50vw, 65vw"
     data-zoom-src="/projects/z906/optocoupler.png"></figure>
-<p>You can look at the project on the GitHub repo :
+<p>You can look at the project on the GitHub repo:
 <div class="github-card-wrapper">
     <a id="github-deba0756c7ce229b6dbdcd360aca605d" target="_blank" href="https://github.com/OllieeeChap/logi_z906_HA" class="cursor-pointer">
       <div
@@ -2054,7 +2054,7 @@
     </span>
     
 </h4>
-<p>Now that we have our code and our schematic, time to inhale soldering tin&rsquo;s smoke (I know it&rsquo;s not good for me but don&rsquo;t worry, my fan was besides me) ! This took quite a moment as there is a lot of cable, and DE-15 connector were cheap, so the quality was not there, but I managed to do everything :</p>
+<p>Now that we have our code and our schematic, time to inhale soldering tin&rsquo;s smoke (I know it&rsquo;s not good for me but don&rsquo;t worry, my fan was besides me)! This took quite a moment as there is a lot of cable, and DE-15 connector were cheap, so the quality was not there, but I managed to do everything:</p>
 <figure><img
     class="my-0 rounded-md"
     loading="lazy"
@@ -2079,7 +2079,7 @@
 </h2>
 <p>AirPlay remote control and state ? <strong>Check</strong></p>
 <p>Logitech Z906 remote control and state ? <strong>Check</strong></p>
-<p>The only thing left to do is simply automate the process using Home Assistant, which is very easily with latest versions. The flowchart is as below :</p>
+<p>The only thing left to do is simply automate the process using Home Assistant, which is very easily with latest versions. The flowchart is as below:</p>
 <figure><img
     class="my-0 rounded-md"
     loading="lazy"
