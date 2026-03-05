@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copy, _right?_</copyright>
-    <lastBuildDate>Mon, 13 Jun 2022 20:55:37 +0100</lastBuildDate><atom:link href="https://olchap.fr/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://olchap.fr/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Emotional Baggage</title>
+      <link>https://olchap.fr/projects/emotionalbaggage/</link>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://olchap.fr/projects/emotionalbaggage/</guid>
+      <description>Dive deep to breath / Brackeys&#39;26</description>
+      
+    </item>
+    
+    <item>
+      <title>&#39;Til you make it</title>
+      <link>https://olchap.fr/projects/tilyoumakeit/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://olchap.fr/projects/tilyoumakeit/</guid>
+      <description>Another game for GMTK 2026</description>
+      
+    </item>
     
     <item>
       <title>LogiWifi</title>

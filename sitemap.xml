@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://olchap.fr/projects/z906/</loc>
-    <lastmod>2025-10-09T00:00:00+00:00</lastmod>
+    <loc>https://olchap.fr/</loc>
+    <lastmod>2026-02-23T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://olchap.fr/</loc>
+    <loc>https://olchap.fr/projects/z906/</loc>
     <lastmod>2025-10-09T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
